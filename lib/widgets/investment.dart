@@ -1,6 +1,5 @@
-
-
 import 'package:fin_buddy/models/card_model.dart';
+import 'package:fin_buddy/screens/category_investment.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -15,11 +14,22 @@ class SectorInvestment extends StatelessWidget {
     return SizedBox(
       height: 175,
       child: ListView.builder(
-          padding: const EdgeInsets.only(left: 16, right: 8),
-          scrollDirection: Axis.horizontal,
-          itemCount: cards.length,
-          itemBuilder: (context, index) {
-            return Container(
+        padding: const EdgeInsets.only(left: 16, right: 8),
+        scrollDirection: Axis.horizontal,
+        itemCount: cards.length,
+        itemBuilder: (context, index) {
+          return GestureDetector(
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => CategoryStocks(
+                    category: cards[index].name,
+                  ),
+                ),
+              );
+            },
+            child: Container(
               margin: const EdgeInsets.only(right: 8),
               height: 175,
               width: 220,
@@ -116,8 +126,10 @@ class SectorInvestment extends StatelessWidget {
                   )
                 ],
               ),
-            );
-          },),
+            ),
+          );
+        },
+      ),
     );
   }
 }
