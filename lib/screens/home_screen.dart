@@ -1,9 +1,10 @@
+import 'package:fin_buddy/widgets/gain.dart';
 import 'package:fin_buddy/widgets/investment.dart';
+import 'package:fin_buddy/widgets/losses.dart';
 import 'package:fin_buddy/widgets/topup.dart';
 import 'package:fin_buddy/widgets/transaction.dart';
 import 'package:flutter/material.dart';
 import 'package:fin_buddy/constants/color_constant.dart';
-import 'package:fin_buddy/custom_icons/flutter_custom_icon.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -28,7 +29,7 @@ class _HomeScreenState extends State<HomeScreen> {
         leading: IconButton(
           constraints: const BoxConstraints(),
           icon: const Icon(
-            MyFlutterApp.navigationdrawer,
+            Icons.dashboard_outlined,
             color: kBlackColor,
           ),
           onPressed: () {},
@@ -52,6 +53,34 @@ class _HomeScreenState extends State<HomeScreen> {
           ),
 
           const SectorInvestment(),
+
+          Padding(
+            padding: const EdgeInsets.only(left: 24, top: 30, bottom: 16),
+            child: Text(
+              'Top Gainers',
+              style: GoogleFonts.nunito(
+                fontSize: 20,
+                fontWeight: FontWeight.w700,
+                color: kBlackColor,
+              ),
+            ),
+          ),
+
+          const TopGainers(),
+
+          Padding(
+            padding: const EdgeInsets.only(left: 24, top: 30, bottom: 16),
+            child: Text(
+              'Top Loosers',
+              style: GoogleFonts.nunito(
+                fontSize: 20,
+                fontWeight: FontWeight.w700,
+                color: kBlackColor,
+              ),
+            ),
+          ),
+
+          const TopLossers(),
 
           // Last Transaction Section
           Padding(

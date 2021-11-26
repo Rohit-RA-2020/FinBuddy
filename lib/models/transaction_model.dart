@@ -40,7 +40,7 @@ List<WalletModel> wallets = walletData
 
 var transactionData = [
   {
-    "name": "Sold",
+    "name": "Buyed",
     "type": 'assets/icons/outcome_icon.svg',
     "colorType": 'kOrangeColor',
     "signType": "-",
@@ -51,7 +51,7 @@ var transactionData = [
     "card": "assets/images/mastercard_logo.png"
   },
   {
-    "name": "Buyed",
+    "name": "Sold",
     "type": 'assets/icons/income_icon.svg',
     "colorType": 'kGreenColor',
     "signType": "+",
@@ -62,7 +62,7 @@ var transactionData = [
     "card": "assets/images/jenius_logo_blue.png"
   },
   {
-    "name": "Sold",
+    "name": "Buyed",
     "type": 'assets/icons/outcome_icon.svg',
     "colorType": 'kOrangeColor',
     "signType": "-",

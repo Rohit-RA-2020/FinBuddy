@@ -117,7 +117,7 @@ class SectorInvestment extends StatelessWidget {
                 ],
               ),
             );
-          }),
+          },),
     );
   }
 }
