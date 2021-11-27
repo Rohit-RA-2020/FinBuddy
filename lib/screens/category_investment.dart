@@ -1,4 +1,3 @@
-import 'package:fin_buddy/chart.dart';
 import 'package:fin_buddy/models/banking.dart';
 import 'package:flutter/material.dart';
 
@@ -13,7 +12,6 @@ class CategoryStocks extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final categoryStocks = category.toLowerCase();
-    print(categoryStocks);
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.transparent,

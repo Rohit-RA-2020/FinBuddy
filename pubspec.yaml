@@ -38,6 +38,8 @@ dependencies:
   flutter_spinkit: ^5.1.0
   flutter_svg: ^0.23.0+1
   syncfusion_flutter_charts:
+  page_transition: ^2.0.4
+  bottom_bar: ^1.2.5
 
 dev_dependencies:
   flutter_test:
