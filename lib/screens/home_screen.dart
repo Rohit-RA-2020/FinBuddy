@@ -28,31 +28,33 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        backgroundColor: Theme.of(context).backgroundColor,
-        elevation: 0,
-        title: const Text(
-          'Welcome Investor!',
-          style: TextStyle(color: Colors.black),
-        ),
-        leading: IconButton(
-          constraints: const BoxConstraints(),
-          icon: const Icon(
-            Icons.library_books_outlined,
-            color: kBlackColor,
-          ),
-          onPressed: () {
-            Navigator.push(
-              context,
-              PageTransition(
-                type: PageTransitionType.leftToRightWithFade,
-                child: const Learning(),
+      appBar: _currentPage != 3
+          ? AppBar(
+              backgroundColor: Theme.of(context).backgroundColor,
+              elevation: 0,
+              title: const Text(
+                'Welcome Investor!',
+                style: TextStyle(color: Colors.black),
               ),
-            );
-          },
-          padding: const EdgeInsets.only(left: 20),
-        ),
-      ),
+              leading: IconButton(
+                constraints: const BoxConstraints(),
+                icon: const Icon(
+                  Icons.library_books_outlined,
+                  color: kBlackColor,
+                ),
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    PageTransition(
+                      type: PageTransitionType.leftToRightWithFade,
+                      child: const Learning(),
+                    ),
+                  );
+                },
+                padding: const EdgeInsets.only(left: 20),
+              ),
+            )
+          : null,
       body: PageView(
         controller: _pageController,
         onPageChanged: (int index) {
@@ -64,10 +66,11 @@ class _HomeScreenState extends State<HomeScreen> {
           DashBoard(),
           MutualFund(),
           WalletSection(),
-          Profile(),
+          ProfileScreen(),
         ],
       ),
       bottomNavigationBar: BottomBar(
+        height: 65,
         selectedIndex: _currentPage,
         onTap: (int index) {
           _pageController.jumpToPage(index);

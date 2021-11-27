@@ -121,7 +121,7 @@ Widget _contentOverView() {
             style: TextStyle(color: Color(0xff1B1D28), fontSize: 22),
           ),
           shape: const CircleBorder(),
-          color: const Color(0xffFFAC30),
+          color: Colors.lightBlue,
         )
       ],
     ),
@@ -146,7 +146,7 @@ Widget _contentSendMoney() {
                 style: TextStyle(color: Color(0xff1B1D28), fontSize: 22),
               ),
               shape: const CircleBorder(),
-              color: const Color(0xffFFAC30),
+              color: Colors.lightBlue,
             )),
         Container(
           margin: const EdgeInsets.only(right: 10),
@@ -200,7 +200,7 @@ Widget _contentSendMoney() {
               Text(
                 "Joshpeh",
                 style: GoogleFonts.poppins(
-                  fontSize: 12,
+                  fontSize: 11.2,
                   color: const Color(0xff3A4276),
                   fontWeight: FontWeight.w500,
                 ),
