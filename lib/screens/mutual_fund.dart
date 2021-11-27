@@ -138,6 +138,14 @@ class Funds extends StatelessWidget {
         scrollDirection: Axis.horizontal,
         children: const <Widget>[
           FundItem(
+            logo: 'assets/company/kotak.png',
+            per: '36.48%',
+            name: 'Kotak Small Cap Fund',
+            plan: 'Direct Growth',
+            equity: 'Equity Small Cap',
+            returns: '3Y Returns',
+          ),
+          FundItem(
             logo: 'assets/company/icici.png',
             per: '44.1%',
             name: 'ICICI Prudential Technology',

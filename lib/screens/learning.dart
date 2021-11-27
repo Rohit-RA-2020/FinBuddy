@@ -19,7 +19,8 @@ final List<Map> articles = [
     "title": "Your 5 min guide to Mutual Fund",
     "author": "Martha",
     "time": "5 min read",
-    "image": "https://img.etimg.com/thumb/msid-70638318,width-300,imgsize-198621,,resizemode-4,quality-100/mutual-fund-combination.jpg",
+    "image":
+        "https://img.etimg.com/thumb/msid-70638318,width-300,imgsize-198621,,resizemode-4,quality-100/mutual-fund-combination.jpg",
   },
   {
     "title": "How to Start Investing in Stock Market",
@@ -46,9 +47,9 @@ final List<Map> articles = [
     "title": "Your 5 min guide to Mutual Fund",
     "author": "Martha",
     "time": "5 min read",
-    "image": "https://img.etimg.com/thumb/msid-70638318,width-300,imgsize-198621,,resizemode-4,quality-100/mutual-fund-combination.jpg",
+    "image":
+        "https://img.etimg.com/thumb/msid-70638318,width-300,imgsize-198621,,resizemode-4,quality-100/mutual-fund-combination.jpg",
   },
-  
 ];
 
 class Learning extends StatelessWidget {

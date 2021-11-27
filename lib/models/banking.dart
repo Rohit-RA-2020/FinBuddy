@@ -136,5 +136,65 @@ var banking = [
     "Value": "1,824.00",
     "status": "-1.00(0.00%)",
     "category": "it sector",
+  },
+  {
+    "name": "Bharti Airtel",
+    "Value": "738.75",
+    "status": "-26.40(3.45%)",
+    "category": "telecom",
+  },
+  {
+    "name": "Indus Towers",
+    "Value": "278.70",
+    "status": "-18.10(6.10%)",
+    "category": "telecom",
+  },
+  {
+    "name": "Tata Comm",
+    "Value": "1,298.20",
+    "status": "4.65(0.36%)",
+    "category": "telecom",
+  },
+  {
+    "name": "Vodafone Idea",
+    "Value": "10.85",
+    "status": "-0.80(6.87%)",
+    "category": "telecom",
+  },
+  {
+    "name": "Affle",
+    "Value": "1,181.60",
+    "status": "-15.25(1.27%)",
+    "category": "telecom",
+  },
+  {
+    "name": "Air India",
+    "Value": "500.332",
+    "status": "-16.25(2.27%)",
+    "category": "aviation",
+  },
+  {
+    "name": "Aviation India",
+    "Value": "1200.43",
+    "status": "-26.25(5.27%)",
+    "category": "aviation",
+  },
+  {
+    "name": "Indigo",
+    "Value": "205.98",
+    "status": "-11.25(5.27%)",
+    "category": "aviation",
+  },
+  {
+    "name": "Spice jet",
+    "Value": "120",
+    "status": "-4.25(4.27%)",
+    "category": "aviation",
+  },
+  {
+    "name": "Jet Airways",
+    "Value": "212.4",
+    "status": "-4.25(10.27%)",
+    "category": "aviation",
   }
 ];
