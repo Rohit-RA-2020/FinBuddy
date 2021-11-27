@@ -28,7 +28,6 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Theme.of(context).backgroundColor,
       appBar: AppBar(
         backgroundColor: Theme.of(context).backgroundColor,
         elevation: 0,
@@ -64,7 +63,7 @@ class _HomeScreenState extends State<HomeScreen> {
         children: const <Widget>[
           DashBoard(),
           MutualFund(),
-          Wallet(),
+          WalletSection(),
           Profile(),
         ],
       ),
@@ -111,7 +110,7 @@ class DashBoard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ListView(
-      physics: const ClampingScrollPhysics(),
+      physics: const BouncingScrollPhysics(),
       children: <Widget>[
         // Card Account Section
         Padding(

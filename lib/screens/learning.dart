@@ -7,7 +7,7 @@ class Learning extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.white,
+        backgroundColor: Theme.of(context).backgroundColor,
         elevation: 0,
         automaticallyImplyLeading: false,
         title: const Text(
