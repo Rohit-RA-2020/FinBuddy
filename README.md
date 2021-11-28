@@ -17,9 +17,9 @@
 ### Steps to run app on local system
 
 
-#### 1) Clone the repositry on your local computer
-#### 2) cd fin_buddy
-#### 3) type 'flutter run' in terminal
+> #### 1) Clone the repositry on your local computer
+> #### 2) cd fin_buddy
+> #### 3) type 'flutter run' in terminal
 
 This project is a starting point for a Flutter application.
 
